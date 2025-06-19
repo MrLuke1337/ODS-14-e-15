@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ODS 14 e 15 - Página Inicial</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e0f7fa, #e8f5e9);
+      color: #003300;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #004d40;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-left img {
+      height: 40px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #a7ffeb;
+    }
+
+    header {
+      position: relative;
+      background-color: #00695c;
+      color: white;
+      height: 200px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .header-img-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .header-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.35;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.8em;
+      margin: 0;
+      line-height: 200px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #004d40;
+    }
+
+    section img {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 160px;
+    }
+
+    ul {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #26a69a;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #00796b;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004d40;
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #a7ffeb;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+        line-height: normal;
+        padding: 30px 10px;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      section {
+        margin: 20px;
+      }
+
+      .nav-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="zoo/zoo_branco_sem_fundo.png" alt="Logo Zoo">
+      </a>
+      <div class="nav-links">
+        <a href="ods14.html">ODS 14</a>
+        <a href="ods15.html">ODS 15</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="header-img-container">
+      <img src="https://www.piramidal.com.br/blog/wp-content/uploads/2023/09/diferenca-sustentabilidade-e-desenvolvimento-sustentavel.png" alt="Imagem Header">
+    </div>
+    <h1>Objetivos de Desenvolvimento Sustentável</h1>
+  </header>
+
+  <section>
+    <h2>Vida na Água</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRumEvZPyniBAfWj18H6GBbp_kAYejdwdRuAQ&s" alt="ODS 14">
+    <p><center>A ODS 14 busca conservar e usar de forma sustentável os oceanos, mares e recursos marinhos.</center></p>
+    <center><a class="button" href="https://www.ipea.gov.br/ods/ods14.html">Ler mais sobre a ODS 14</a></center>
+  </section>
+
+  <section>
+    <h2>Vida Terrestre</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQip6KsmJTj2I5Kj0l0rwzcHXJZwBmtyxgnAQ&s" alt="ODS 15">
+    <p><center>A ODS 15 busca proteger os ecossistemas terrestres.</center></p>
+    <center><a class="button" href="https://www.ipea.gov.br/ods/ods15.html">Ler mais sobre a ODS 15</a></center>
+  </section>
+
+  <footer>
+    <p>Referências: 
+      <a href="https://brasil.un.org/pt-br/sdgs">ONU Brasil</a> | 
+      <a href="https://www.ipea.gov.br">IPEA</a> | 
+      <a href="https://gtagenda2030.org.br/ods/ods14/">GT Agenda 2030</a> | 
+      <a href="https://www.iberdrola.com/sustentabilidade/comprometidos-objetivos-desenvolvimento-sustentavel/ods-14-proteger-a-vida-marinha">Iberdrola</a>
+    </p>
+  </footer>
+
+</body>
+</html>
